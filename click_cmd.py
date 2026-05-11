@@ -41,10 +41,16 @@ time.sleep(5)
 print("窗口已固定")
 
 # 连接按钮坐标（可根据实际界面微调）
-CLICK_X = 2300
+CLICK_X = 1000
 CLICK_Y = 390
 
 # 模拟鼠标点击连接按钮
 mouse.click(coords=(CLICK_X, CLICK_Y))
 print("已尝试点击 连接 位置")
 
+CLICK_X_min = 2180
+CLICK_Y_min = 390
+
+# 模拟鼠标点击连接按钮
+mouse.click(coords=(CLICK_X_min, CLICK_Y_min))
+print("已尝试点击 连接 位置")

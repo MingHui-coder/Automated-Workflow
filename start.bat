@@ -29,6 +29,6 @@ start "" "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" "https:/
 
 echo ################完成自定义启动程序###################
 timeout /t 5 /nobreak >nul
-@REM call  python click_cmd.py >nul
+call  python click_cmd.py >nul
 cd /d C:\
 exit 0
