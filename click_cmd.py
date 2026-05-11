@@ -36,7 +36,7 @@ time.sleep(0.2)
 # 移动窗口到固定位置
 hwnd = ladder_window.handle
 set_window_pos(hwnd, 600, 360)
-time.sleep(0.2)
+time.sleep(5)
 
 print("窗口已固定")
 
