@@ -30,13 +30,13 @@ def set_window_pos(hwnd, x, y):
     )
 
 # 连接云梯窗口（超时10秒）
-app = Application(backend="uia").connect(title="云梯", timeout=10)
-ladder_window = app.window(title="云梯")
+app = Application(backend="uia").connect(title="微信", timeout=10)
+ladder_window = app.window(title="微信")
 ladder_window.wait("exists", timeout=10)
 
 # 窗口置顶激活
 ladder_window.set_focus()
-time.sleep(0.2)
+time.sleep(10)
 
 # 移动窗口到固定位置
 hwnd = ladder_window.handle
@@ -46,8 +46,8 @@ time.sleep(0.2)
 print("窗口已固定")
 
 # 连接按钮坐标（可根据实际界面微调）
-CLICK_X = 1420
-CLICK_Y = 1120
+CLICK_X = 1520
+CLICK_Y = 380
 
 # 模拟鼠标点击连接按钮
 mouse.click(coords=(CLICK_X, CLICK_Y))
