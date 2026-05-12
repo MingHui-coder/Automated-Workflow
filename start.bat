@@ -11,11 +11,10 @@ powershell -command "$wshell = New-Object -ComObject wscript.shell; $wshell.Send
 
 call  python click_wx.py >nul
 
-echo 正在启动云梯...
-start "" /d "E:\云梯\yunti" "云梯.exe"
 
-echo 正在连接云梯...
-start /b /wait python click_yt.py
+
+@REM echo 正在连接云梯...
+@REM start /b /wait python click_yt.py
 
 echo 正在启动飞书...
 start  "" "C:\Users\LENOVO\AppData\Local\Feishu\Feishu.exe"
@@ -29,6 +28,10 @@ start "" "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" "https:/
 
 echo ################完成自定义启动程序###################
 timeout /t 5 /nobreak >nul
-call  python click_cmd.py >nul
-cd /d C:\
-exit 0
+
+echo 正在启动云梯...
+start "" /d "E:\云梯\yunti" "云梯.exe"
+
+@REM call  python click_cmd.py >nul
+@REM cd /d C:\
+@REM exit 0
