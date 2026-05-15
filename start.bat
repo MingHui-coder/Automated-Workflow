@@ -18,7 +18,7 @@ call  python click_wx.py >nul
 
 echo 正在启动飞书...
 start  "" "C:\Users\LENOVO\AppData\Local\Feishu\Feishu.exe"
-
+timeout /t 1 /nobreak >nul
 call  python click_fs.py >nul
 
 echo ####################打开学习文档##################
@@ -26,12 +26,21 @@ timeout /t 1 /nobreak >nul
 echo 正在启动Edge并打开飞书文档...
 start "" "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" "https://dcnvt6u4x3md.feishu.cn/docx/HxqZdC0rxoA73QxDo4gc4L2XnJg"
 
-echo ################完成自定义启动程序###################
-timeout /t 5 /nobreak >nul
+echo ####################打开时钟##################
+explorer.exe shell:Appsfolder\Microsoft.WindowsAlarms_8wekyb3d8bbwe!App
+timeout /t 1 /nobreak >nul
+call  python click_clock.py >nul
+timeout /t 1 /nobreak >nul
+
+echo ####################打开便笺##################
+explorer.exe shell:Appsfolder\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App
+timeout /t 1 /nobreak >nul
+call  python click_便笺.py >nul
+timeout /t 1 /nobreak >nul
 
 echo 正在启动云梯...
 start "" /d "E:\云梯\yunti" "云梯.exe"
-
+echo ################完成自定义启动程序###################
 @REM call  python click_cmd.py >nul
 @REM cd /d C:\
 @REM exit 0
