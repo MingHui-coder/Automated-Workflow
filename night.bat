@@ -9,9 +9,11 @@ echo Hello, Minghui Zhang
 timeout /t 1 /nobreak >nul
 
 echo.
-echo 现在是11:30
+echo 现在是11:20
 echo 已经到【总结】+【洗漱】的时间了~ ~ ~
+echo 计划【上床时间】是12:00, 看课外书30min
 echo 计划【睡觉时间】是12:30
+echo 计划【起床时间】是8:30
 timeout /t 1 /nobreak >nul
 
 echo ####################打开【便笺】##################
